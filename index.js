@@ -58,7 +58,7 @@ let posts = [
 ];
 
 //Index route
-app.get("/post", (req, res) => {
+app.get("/", (req, res) => {
     res.render("index.ejs", {posts});
 });
 
@@ -105,4 +105,5 @@ app.delete("/post/:id", (req, res) => {
 
 app.listen(port, (req, res) => {
     console.log(`Listen on port ${port}`);
+
 });
